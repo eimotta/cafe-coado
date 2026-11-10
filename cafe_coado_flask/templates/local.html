@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Local - Café Coado{% endblock %}
+{% block content %}
+<section class="secao"><div class="container">
+<h2>Onde encontrar a gente</h2><p class="sub">Vem tomar um café com a gente!</p>
+<div class="grid">
+<div class="card"><h4>📍 Endereço</h4><p><b>Rua República do Piratini, 1205</b><br>Uberlândia - MG</p></div>
+<div class="card"><h4>🟢 WhatsApp</h4><p><b>(34) 99861-8979</b><br>Clique em Fazer Pedido para pedir direto.</p></div>
+<div class="card"><h4>🕒 Horários</h4><p>Segunda a Sexta: 7h às 19h<br>Sábado: 8h às 20h<br>Domingo: 8h às 13h</p></div>
+</div>
+<div style="margin-top:26px" class="banner"><div><h3>Como chegar</h3><p>Abre no Google Maps e vem!</p></div>
+<a class="btn btn-claro" href="https://www.google.com/maps/search/?api=1&query=Rua+Rep%C3%BAblica+do+Piratini+1205+Uberl%C3%A2ndia+MG" target="_blank">📍 Abrir no Maps →</a>
+<a class="btn btn-verde" href="https://wa.me/{{ whatsapp }}?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido!" target="_blank">🟢 Fazer Pedido</a></div>
+</div></section>
+{% endblock %}

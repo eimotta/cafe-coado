@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Sobre - Café Coado{% endblock %}
+{% block content %}
+<section class="secao"><div class="container">
+<h2>Nossa História</h2><p class="sub">Um pedacinho de Minas em Uberlândia.</p>
+<p style="line-height:1.7;font-size:17px;max-width:800px">O Café Coado nasceu da saudade do café da vó: aquele coado no filtro de pano, com cheiro que tomava a casa inteira, e o pão de queijo saindo do forno.<br><br>
+Aqui a gente faz tudo com calma e com carinho. O café é coado na hora, o pão de queijo é assado em fornadas pequenas pra estar sempre quentinho, e a broa segue receita de roça.<br><br>
+Não é só uma cafeteria. É um lugar pra sentar, conversar, trabalhar tranquilo ou só respirar um pouco com uma xícara na mão.</p>
+<div class="grid" style="margin-top:30px">
+<div class="card"><h4>☕ Coado na hora</h4><p>Nada de café requentado. Cada xícara é coada no momento do pedido.</p></div>
+<div class="card"><h4>🧀 Receita mineira</h4><p>Pão de queijo e broa com sabor de Minas Gerais de verdade.</p></div>
+<div class="card"><h4>🤎 Feito com carinho</h4><p>Atendimento de quem conhece seu nome e seu pedido favorito.</p></div>
+</div>
+<div style="margin-top:30px" class="banner"><div><h3>Quer provar?</h3><p>Pede no WhatsApp e busca rapidinho.</p></div>
+<a class="btn btn-verde" href="https://wa.me/{{ whatsapp }}?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido!" target="_blank">🟢 Fazer Pedido</a></div>
+</div></section>
+{% endblock %}

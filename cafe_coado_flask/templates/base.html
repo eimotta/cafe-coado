@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Café Coado{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body>
+<header class="topo"><div class="container nav">
+<div class="logo">☕ CAFÉ <span>COADO</span></div>
+<nav class="menu"><a href="/">Início</a><a href="/sobre">Sobre</a><a href="/local">Local</a>
+<a class="btn-pedido" href="https://wa.me/{{ whatsapp }}?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20no%20Caf%C3%A9%20Coado!" target="_blank">🟢 Fazer Pedido</a></nav>
+</div></header>
+{% block content %}{% endblock %}
+<footer class="rodape"><div class="container rodape-grid"><div><b>☕ CAFÉ COADO</b><br><small>Coado na hora, com carinho mineiro.</small></div>
+<div><b>Endereço</b><br><small>Rua República do Piratini, 1205<br>Uberlândia - MG</small></div>
+<div><b>WhatsApp</b><br><small>(34) 99861-8979</small></div></div></footer>
+</body></html>

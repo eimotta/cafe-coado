@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Café Coado - Cardápio{% endblock %}
+{% block content %}
+<section class="hero"><div class="container hero-grid">
+<div><h1>Café coado<br><em>na hora,</em><br>com carinho.</h1>
+<p>O pão de queijo quentinho, a broa da roça e aquele café que abraça. Direto de Minas para a sua mesa em Uberlândia.</p>
+<div class="botoes">
+<a class="btn btn-verde" href="https://wa.me/{{ whatsapp }}?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20no%20Caf%C3%A9%20Coado!" target="_blank">🟢 Fazer Pedido no WhatsApp</a>
+<a class="btn btn-claro" href="/sobre">Conhecer nossa história →</a>
+</div></div>
+<div class="card-hero"><h3>⭐ Hoje na casa</h3>
+<p>Pão de queijo saindo do forno toda hora.<br>Café coado no filtro, sem pressa.</p>
+<div><span class="pill">🧀 Pão de Queijo</span><span class="pill">☕ Café Coado</span><span class="pill">🌽 Broa</span><span class="pill">🥛 Cappuccino</span></div>
+<p style="margin-top:14px"><b>📍 Rua República do Piratini, 1205 - Uberlândia MG</b></p></div>
+</div></section>
+
+<section class="secao"><div class="container">
+<h2>Nosso Cardápio</h2><p class="sub">Sem preço, sem complicação. Escolhe o que te deu vontade e pede no WhatsApp.</p>
+{% for categoria, itens in cardapio.items() %}
+<div class="categoria"><h3>{{ categoria }}</h3><div class="grid">
+{% for item in itens %}
+<div class="card"><h4>{{ item.nome }}</h4><p>{{ item.desc }}</p><span class="tag">{{ item.tag }}</span></div>
+{% endfor %}</div></div>
+{% endfor %}
+<div style="margin-top:36px" class="banner"><div><h3>Deu vontade? Pede agora!</h3><p>A gente já deixa seu pedido prontinho.</p></div>
+<a class="btn btn-verde" href="https://wa.me/{{ whatsapp }}?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20no%20Caf%C3%A9%20Coado!" target="_blank">🟢 Fazer Pedido - (34) 99861-8979</a></div>
+</div></section>
+{% endblock %}
